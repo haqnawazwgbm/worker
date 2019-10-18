@@ -1,0 +1,8 @@
+runtime "node"
+
+file "package.json"
+stack "node-0.10"
+build "npm config set strict-ssl false; npm install"
+
+exec "scheduler.js"
+remote
